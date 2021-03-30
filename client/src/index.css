@@ -1,0 +1,96 @@
+html,
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  background-color: #fbfaf8;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  border-radius: 30px;
+  color: #cf6a87;
+  background-color: #f9f9f9;
+}
+
+.img {
+  height: 100px;
+  width: auto;
+}
+.btn {
+  padding: 7px 15px;
+  border-radius: 15px;
+  color: #cf6a87;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 333ms, background-color 333ms;
+  margin-bottom: 10px;
+  border: 1px solid #cf6a87;
+}
+.dropdown {
+  padding: 7px 15px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-bottom: 0.6em;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 18px;
+  border: none;
+}
+
+.btn:hover {
+  color: #fbfaf8;
+  background-color: #cf6a87;
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switchWrap {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.switchWrap p {
+  color: "black";
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.switch {
+  display: inline-block;
+  font-size: 20px;
+  height: 1em;
+  width: 2em;
+  background: #cf6a87;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #fff;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+  transition: transform 333ms;
+  cursor: pointer;
+}
+.flipped div {
+  transform: translate3d(100%, 0, 0);
+}
